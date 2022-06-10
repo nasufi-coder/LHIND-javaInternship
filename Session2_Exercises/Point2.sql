@@ -1,1 +1,4 @@
-SELECT * FROM customers INNER JOIN orders ON customers.customerNumber=orders.customerNumber  WHERE customers.country='Germany'
+SELECT * FROM customers 
+INNER JOIN orders ON customers.customerNumber=orders.customerNumber
+INNER JOIN orderdetails ON orders.orderNumber=orderdetails.orderNumber
+WHERE customers.country='Germany'
