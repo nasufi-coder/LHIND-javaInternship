@@ -1,0 +1,1 @@
+SELECT * FROM customers INNER JOIN orders ON customers.customerNumber=orders.customerNumber  WHERE customers.country='Germany'
